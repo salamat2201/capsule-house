@@ -7,7 +7,7 @@ const contactData = [
     },
     {
       id: 2,
-      title: "Темирязева 28в, БЦ Алатау Гранд",
+      title: "Тимирязева 28в, БЦ Алатау Гранд",
       subtitle: "наш главный офис",
       link: "https://maps.google.com/?q=Темирязева 28в",
     },

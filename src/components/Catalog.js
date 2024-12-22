@@ -21,7 +21,6 @@ const Catalog = () => {
   const navigate = useNavigate();
 
   const handleCardClick = (id) => {
-    console.log(id);
     navigate(`/${id}`);
   };
 
