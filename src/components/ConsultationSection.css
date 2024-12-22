@@ -1,0 +1,169 @@
+/* Основной контейнер секции */
+.consultation-section {
+    background-color: #043927; /* Темно-зеленый фон */
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    color: #ffffff;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .advantages-title {
+    font-family: 'Montserrat', serif;
+  }
+
+  .advantages-list {
+    text-align: start;
+  }
+
+  .advantages-item {
+    font-size: 20px;
+  }
+
+  .advantages-list li {
+    font-family:'Poppins',  serif;
+    font-weight: 700;
+  }
+  
+  /* Фоновый узор (опционально, для красоты) */
+  .consultation-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.1; /* Прозрачность для фона */
+    z-index: 0;
+  }
+  
+  /* Контейнер для контента */
+  .consultation-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1; /* Над фоновым узором */
+  }
+  
+  /* Левый блок */
+  .consultation-left {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #d1d1d1;
+    font-family: "Montserrat", serif;
+  }
+  
+  /* Правый блок */
+  .consultation-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .titleF {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: "Montserrat", serif;
+  }
+  
+  /* Форма */
+  .consultation-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .input-name,
+  .input-phone {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: "Montserrat", serif;
+  }
+  
+  .input-name::placeholder,
+  .input-phone::placeholder {
+    color: #c2c2c2;
+  }
+  
+  .input-name:focus,
+  .input-phone:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Кнопка */
+  .consult-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #043927;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration-line: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Montserrat", serif;
+  }
+  
+  .consult-button:hover {
+    background-color: #e6e6e6;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .consultation-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .titleF {
+      font-size: 1.7em;
+    }
+  
+    .consultation-left {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .consultation-form {
+      flex-direction: column;
+    }
+  
+    .input-name,
+    .input-phone {
+      width: 100%;
+    }
+
+    .advantages-item {
+      font-size: 16px;
+    }
+  }
+
+  @media(max-width: 450px) {
+    .titleF {
+      font-size: 1.4em;
+    }
+  }
+  

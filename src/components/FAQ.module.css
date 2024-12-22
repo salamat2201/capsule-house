@@ -1,0 +1,162 @@
+/* Контейнер */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #1d1d1f;
+  }
+  
+  /* Заголовок */
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Список вопросов */
+  .faqList {
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  /* Элемент FAQ */
+  .faqItem {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+  }
+  
+  /* Вопрос */
+  .faqQuestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .faqQuestion:hover {
+    color: #007bff;
+  }
+  
+  /* Активный вопрос */
+  .active {
+    color: #007bff;
+  }
+  
+  /* Иконка (крестик/плюс) */
+  .icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4f4f4f;
+    transition: transform 0.3s;
+  }
+  
+  /* Ответ */
+  .faqAnswer {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #4f4f4f;
+    line-height: 1.5;
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #4f4f4f;
+  }
+  
+  /* Кнопка */
+  .askButton {
+    margin-top: 10px;
+    background-color: #00573f;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .askButton:hover {
+    background-color: #004331;
+  }
+  
+  /* Стрелка на кнопке */
+  .arrow {
+    font-size: 1.2rem;
+  }
+  
+  /* --- Адаптация --- */
+  @media (max-width: 1000px) {
+    .container {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    .title {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+  
+    .faqQuestion {
+      font-size: 0.95rem;
+    }
+  
+    .icon {
+      font-size: 1.2rem;
+    }
+  
+    .faqAnswer {
+      font-size: 0.85rem;
+    }
+  
+    .footer {
+      font-size: 0.85rem;
+    }
+  
+    .askButton {
+      padding: 10px 16px;
+      font-size: 0.9rem;
+    }
+  
+    .arrow {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .title {
+      font-size: 1.6rem;
+    }
+  
+    .faqQuestion {
+      font-size: 0.9rem;
+    }
+  
+    .icon {
+      font-size: 1rem;
+    }
+  
+    .faqAnswer {
+      font-size: 0.8rem;
+    }
+  
+    .askButton {
+      padding: 8px 14px;
+      font-size: 0.85rem;
+      text-decoration-line: none;
+    }
+  
+    .arrow {
+      font-size: 0.9rem;
+    }
+  }  

@@ -1,0 +1,95 @@
+
+
+.home {
+    margin-top: 150px;
+    padding: 0 10px;
+}
+
+.titleH {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    line-height: 1px;
+    letter-spacing: 5px;
+}
+
+.descripH {
+    font-size: 50px;
+}
+
+.whatsapps {
+    background: #f0f0f0;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    padding: 20px 25px; /* уменьшено для адаптации */
+    font-size: 32px; /* уменьшено для адаптации */
+    font-weight: 400;
+}
+
+.whatsapps:hover {
+    background: #b7b3b3;
+    color: black;
+}
+
+@media (max-width: 1298px) {
+    .titleH {
+        font-size: 70px;
+        line-height: 1px;
+        letter-spacing: 3px;
+    }
+    
+    .descripH {
+        font-size: 30px;
+    }
+
+    .whatsapps {
+        font-size: 20px;
+        padding: 14px 18px; /* уменьшено для адаптации */
+    }
+}
+
+@media (max-width: 1082px) {
+
+    .titleH {
+        font-size: 26px;
+        line-height: 1px;
+    }
+    
+    .descripH {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .whatsapps {
+        font-size: 16px;
+        padding: 14px 18px; 
+        font-weight: 600;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .back {
+        max-height: 50vh;
+    }
+
+    .home {
+        margin-top: 50px;
+    }
+
+    .titleH {
+        font-size: 22px;
+        line-height: 1px;
+    }
+    
+    .descripH {
+        font-size: 15px;
+    }
+
+    .whatsapps {
+        font-size: 13px;
+        padding: 12px 15px; 
+        font-weight: 500;
+    }
+}

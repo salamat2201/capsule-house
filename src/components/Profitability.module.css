@@ -1,0 +1,183 @@
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .title {
+    font-size: 2.8rem;
+    color: #073b4c;
+    font-weight: 700;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #043927, #20473b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .calculator {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    flex: 1 1 45%;
+    background: linear-gradient(135deg, #ffffff, #e0f7fa);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #073b4c;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 20px;
+  }
+  
+  .counter button {
+    background: #20473b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .counter button:hover {
+    background: #20473b;
+  }
+  
+  .counter span {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  .rangeValue {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #073b4c;
+    font-weight: bold;
+  }
+  
+  .results {
+    background: #19604b;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .results h3 {
+    margin: 15px 0;
+    font-size: 1.6rem;
+  }
+  
+  .results span {
+    font-weight: normal;
+  }
+
+  input[type="range"] {
+    -webkit-appearance: none; /* Убираем стандартный стиль */
+    width: 100%; /* Ширина */
+    height: 8px; /* Высота трека */
+    background: linear-gradient(90deg, #19604b, #073b4c); /* Цвет трека */
+    border-radius: 5px; /* Закругление трека */
+    outline: none; /* Убираем контур при фокусе */
+    transition: background 0.3s ease;
+  }
+  
+  /* Ползунок (thumb) */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Убираем стандартный стиль */
+    width: 20px; /* Ширина ползунка */
+    height: 20px; /* Высота ползунка */
+    background: #073b4c; /* Цвет ползунка */
+    border-radius: 50%; /* Круглый ползунок */
+    cursor: pointer; /* Указываем, что элемент кликабельный */
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  /* При наведении мыши на ползунок */
+  input[type="range"]::-webkit-slider-thumb:hover {
+    background: #06d6a0;
+    transform: scale(1.2); /* Увеличиваем ползунок */
+  }
+  
+  /* Для Firefox */
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #073b4c;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  input[type="range"]::-moz-range-thumb:hover {
+    background: #06d6a0;
+    transform: scale(1.2);
+  }
+  
+  /* Для IE */
+  input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: #073b4c;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  input[type="range"]::-ms-thumb:hover {
+    background: #19604b;
+    transform: scale(1.2);
+  }
+  
+  /* Цвет трека при движении */
+  input[type="range"]::-webkit-slider-runnable-track {
+    background: linear-gradient(90deg, #19604b, #073b4c); /* Цвет трека */
+    height: 8px; /* Высота */
+    border-radius: 5px;
+  }
+  
+  
+  .button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #19604b, #073b4c);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 100%;
+    }
+  }
+  

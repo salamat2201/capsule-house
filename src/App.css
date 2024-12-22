@@ -1,0 +1,31 @@
+/* .back {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+.back {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('https://www.ajmanproperties.ae/frontend/assets/files/Lifestyle-Blogs-Sep-2024/Capsule-House--What-Are-They-and-Why-People-Are-Preferring-Them-ajman-properties-(1).jpg'); /* пример изображения */
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}

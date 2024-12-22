@@ -1,0 +1,100 @@
+/* General styles */
+.details-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.details-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.details-table td:nth-child(1) {
+  font-weight: bold;
+}
+
+.submit-button,
+.back-button {
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  text-decoration-line: none;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.back-button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+.back-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .details-table {
+    font-size: 14px;
+  }
+
+  .details-table td {
+    padding: 8px;
+  }
+
+  .submit-button,
+  .back-button {
+    padding: 15px;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .details-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .submit-button,
+  .back-button {
+    font-size: 16px;
+  }
+}
+

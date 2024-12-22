@@ -1,0 +1,112 @@
+/* Основной контейнер */
+.capsule-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    padding: 40px;
+    background: linear-gradient(to bottom, #f3f4f6, #e5e7eb);
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* Карточки */
+  .feature-card {
+    position: relative;
+    background: linear-gradient(135deg, #043927, #20473b);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.8s ease, opacity 0.8s ease;
+    color: white;
+    opacity: 0; /* Изначально карточка невидима */
+    transform: translateY(50px) scale(0.8) rotate(-5deg); /* Смещение, уменьшение, поворот */
+  }
+
+  .zakaz {
+    background: linear-gradient(135deg, #121986, #20473b);
+    
+  }
+
+  .zakaz p {
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 12px 15px;
+    background-color: white;
+    color: #20473b;
+    font-weight: 700;
+  }
+  
+  /* Видимая карточка */
+  .feature-card.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg); /* Возвращение в нормальное положение */
+  }
+  
+  /* Контент карточки */
+  .feature-content {
+    padding: 24px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Заголовок */
+  .feature-card h3 {
+    margin: 0 0 12px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Описание */
+  .feature-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.85;
+  }
+  
+  /* Фоновые элементы */
+  .feature-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0) 70%);
+    transform: rotate(45deg);
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .feature-card:hover::before {
+    opacity: 0.5;
+  }
+  
+  /* Адаптация для мобильных устройств */
+  @media (max-width: 768px) {
+    .capsule-features {
+      padding: 20px;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  
+    .feature-card h3 {
+      font-size: 18px;
+    }
+  
+    .feature-card p {
+      font-size: 13px;
+    }
+  }
+  
+  /* Адаптация для больших экранов */
+  @media (min-width: 1200px) {
+    .capsule-features {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+  }
+  

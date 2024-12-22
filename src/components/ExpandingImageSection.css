@@ -1,0 +1,129 @@
+/* Основной контейнер */
+.expanding-section {
+  position: relative;
+  height: 100vh; /* Высота секции - 100% высоты экрана */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  padding: 0 20px;
+  background-color: #f9f9f9; /* Цвет фона */
+}
+
+/* Декоративный элемент */
+.decorative-star {
+  font-size: 2rem;
+  color: #006400; /* Темно-зеленый */
+  margin-bottom: 20px;
+}
+
+/* Заголовок */
+.main-title {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto 30px;
+  color: #333;
+  font-family: 'Montserrat', serif;
+}
+
+/* Метки */
+.labels {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* Для адаптации на маленьких экранах */
+}
+
+.label {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.label-dark {
+  background-color: #043927;
+  color: #fff;
+}
+
+/* Увеличивающееся изображение */
+.expanding-image {
+  position: relative;
+  transition: transform 2.5s ease-in-out; /* Плавное увеличение */
+  max-width: 100%; /* Ограничиваем максимальную ширину */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.expanding-image img {
+  width: 100%; /* Изображение растягивается по ширине контейнера */
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .main-title {
+    font-size: 1.8rem; /* Уменьшаем заголовок */
+  }
+
+  .label {
+    font-size: 0.9rem; /* Уменьшаем текст в метках */
+  }
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 1.5rem;
+  }
+
+  .label {
+    font-size: 0.8rem;
+    padding: 8px 16px; /* Уменьшаем отступы */
+  }
+
+  .expanding-image img {
+    width: 80%; /* Ограничиваем размер изображения */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 1.2rem; /* Ещё меньше для мобильных устройств */
+  }
+
+  .label {
+    font-size: 0.7rem;
+    padding: 6px 12px;
+  }
+
+  .expanding-image img {
+    width: 100%; /* Полная ширина для маленьких экранов */
+    height: auto;
+  }
+}
+
+@media (max-width: 390px) {
+  .main-title {
+    font-size: 1.1rem; /* Ещё меньше для мобильных устройств */
+  }
+
+  .label {
+    font-size: 0.5rem;
+    padding: 5px 9px;
+  }
+
+  .expanding-image img {
+    width: 100%; /* Полная ширина для маленьких экранов */
+  }
+}

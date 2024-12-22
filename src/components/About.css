@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Основной контейнер */
+#about {
+  padding-top: 150px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  text-align: center;
+}
+
+.titleA {
+  font-family: 'Montserrat', sans-serif;
+  color: #2a2d2c;
+  font-size: 50px;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  font-weight: 550;
+}
+
+.cards-section {
+  display: flex;
+  flex-wrap: wrap; /* Гибкая адаптация */
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+}
+
+.image-containers {
+  flex: 1 1 50%; /* Изображение занимает половину ширины */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cardss-container {
+  flex: 1 1 45%; /* Карточки занимают половину ширины */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Две карточки в ряд */
+  gap: 20px; /* Расстояние между карточками */
+}
+
+.cards {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards:hover {
+  transform: translateY(-5px); /* Легкий подъем при наведении */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #006400; /* Темно-зеленый цвет */
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #20473b;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-description {
+  font-size: 18px;
+  color: #666;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration-line: none;
+}
+
+.blue-background {
+  background: #20473b; /* Синий цвет */
+  color: white; /* Белый текст для контраста */
+}
+
+.blue-background .card-icon,
+.blue-background .card-title,
+.blue-background .card-description {
+  color: white;
+}
+
+.blue-background .card-description {
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 12px 15px;
+  background-color: white;
+  color: #20473b;
+  font-weight: 700;
+}
+
+/* --- Адаптация для экранов меньше 1082px --- */
+@media (max-width: 1082px) {
+  .titleA {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  .cardss-container {
+    grid-template-columns: 1fr; /* Одна карточка в ряд */
+  }
+
+  .image-containers {
+    flex: 1 1 100%; /* Изображение занимает всю ширину */
+  }
+}
+
+/* --- Адаптация для экранов меньше 700px --- */
+@media (max-width: 700px) {
+  .titleA {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  #about {
+    padding-top: 50px;
+    gap: 0px;
+  }
+
+  .cards {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-description {
+    font-size: 16px;
+  }
+}
+
+/* --- Адаптация для экранов меньше 500px --- */
+@media (max-width: 500px) {
+  .titleA {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .cards {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-description {
+    font-size: 14px;
+  }
+
+  .blue-background .card-description {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
+/* --- Адаптация для экранов меньше 420px --- */
+@media (max-width: 420px) {
+  .titleA {
+    font-size: 16px;
+  }
+
+  .main-image {
+    width: 100%; /* Уменьшаем изображение */
+  }
+}

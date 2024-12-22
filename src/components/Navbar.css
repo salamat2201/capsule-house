@@ -1,0 +1,147 @@
+/* Основные стили */
+.logo {
+    color: inherit;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.navbar {
+    z-index: 100; /* выводим поверх остальных элементов */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background 0.3s;
+    font-size: 18px; /* уменьшено для адаптации */
+}
+
+.nav-links li:hover {
+    transform: scale(1.1);
+    font-weight: 700;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.phone {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-size: 16px; /* уменьшено для адаптации */
+    font-weight: 600;
+}
+
+.whatsapp {
+    background: #f0f0f0;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    padding: 8px 12px; /* уменьшено для адаптации */
+    font-size: 16px; /* уменьшено для адаптации */
+    font-weight: 600;
+}
+
+.phone:hover,
+.whatsapp:hover {
+    background: #f0f0f0;
+    color: black;
+}
+
+/* Бургер-меню */
+.burger {
+    display: none; /* скрыто на больших экранах */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 101; /* выше меню */
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1082px) {
+    .burger {
+        display: flex; /* показываем бургер на малых экранах */
+    }
+
+    .nav-links {
+        display: none; /* скрываем меню */
+        flex-direction: column; /* вертикальное расположение */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9); /* затемнение фона */
+        padding: 20px 0;
+        z-index: 99; /* ниже navbar, но выше секций */
+    }
+
+    .nav-links.active {
+        display: flex; /* показываем меню при активации */
+    }
+
+    .actions {
+        flex-direction: column; /* вертикальное расположение действий */
+    }
+}
+
+@media (max-width: 1298px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-links li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 548px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-links li {
+        font-size: 16px;
+    }
+
+    .actions a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 410px) {
+    .logo {
+        font-size: 15px;
+    }
+
+    .nav-links li {
+        font-size: 12px;
+    }
+
+    .actions a {
+        font-size: 9px;
+    }
+}
