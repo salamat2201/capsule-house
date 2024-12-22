@@ -1,0 +1,47 @@
+.why-us {
+    text-align: center;
+  }
+  
+  .why-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .why-us p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .factory-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .factory-images img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    
+  .why-us h2 {
+    font-size: 1.5rem;
+    margin-bottom: -15px;
+  }
+  
+  .why-us p {
+    font-size: 0.8rem;
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+
+  .factory-images img {
+    width: 150px;
+  }
+  }
+  

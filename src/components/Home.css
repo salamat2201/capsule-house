@@ -1,19 +1,18 @@
 
 
 .home {
-    margin-top: 150px;
     padding: 0 10px;
 }
 
 .titleH {
     font-family: 'Montserrat', sans-serif;
-    font-size: 100px;
+    font-size: 50px;
     line-height: 1px;
     letter-spacing: 5px;
 }
 
 .descripH {
-    font-size: 50px;
+    font-size: 20px;
 }
 
 .whatsapps {
@@ -32,15 +31,23 @@
     color: black;
 }
 
+@media (max-width: 1318px) {
+    .titleH {
+        font-size: 50px;
+        line-height: 1px;
+        letter-spacing: 3px;
+    }
+}
+
 @media (max-width: 1298px) {
     .titleH {
-        font-size: 70px;
+        font-size: 45px;
         line-height: 1px;
         letter-spacing: 3px;
     }
     
     .descripH {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .whatsapps {
@@ -70,9 +77,6 @@
 
 
 @media (max-width: 700px) {
-    .back {
-        max-height: 50vh;
-    }
 
     .home {
         margin-top: 50px;

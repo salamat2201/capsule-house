@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import WhyUs from './WhyUs';
 
 const Home = () => {
   const phoneNumber = "+77711460961";
@@ -20,6 +21,7 @@ const Home = () => {
       <a href={whatsappLink} className="whatsapps" target="_blank" rel="noopener noreferrer">
           ЗАКАЗАТЬ КАПСУЛЬНЫЙ ДОМ
       </a>
+      <WhyUs/>
     </section>
   );
 };
