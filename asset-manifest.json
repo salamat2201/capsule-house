@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/capsule-house/static/css/main.7f107372.css",
-    "main.js": "/capsule-house/static/js/main.1c9338c9.js",
+    "main.css": "/capsule-house/static/css/main.49b1b13f.css",
+    "main.js": "/capsule-house/static/js/main.64180be8.js",
+    "static/media/IMG_3578.PNG": "/capsule-house/static/media/IMG_3578.e70ed638d5e135b5ea2a.PNG",
+    "static/media/IMG_3577.JPG": "/capsule-house/static/media/IMG_3577.731832e8bc2f6af8c326.JPG",
     "static/media/_750x.webp": "/capsule-house/static/media/841d169425d84d25a561a0d439f05ccf_750x.711174a93d87d4c96bc2.webp",
     "static/media/IMG_3278.JPG": "/capsule-house/static/media/IMG_3278.0cda3f267bf71025e1d6.JPG",
     "static/media/IMG_3523.JPG": "/capsule-house/static/media/IMG_3523.a35b8d425ce3c99ee4cb.JPG",
@@ -22,11 +24,11 @@
     "static/media/IMG_3274.JPG": "/capsule-house/static/media/IMG_3274.86e52b54883107868d88.JPG",
     "static/media/Без названия (3).jpg": "/capsule-house/static/media/Без названия (3).2707ab9b99a22deb491d.jpg",
     "index.html": "/capsule-house/index.html",
-    "main.7f107372.css.map": "/capsule-house/static/css/main.7f107372.css.map",
-    "main.1c9338c9.js.map": "/capsule-house/static/js/main.1c9338c9.js.map"
+    "main.49b1b13f.css.map": "/capsule-house/static/css/main.49b1b13f.css.map",
+    "main.64180be8.js.map": "/capsule-house/static/js/main.64180be8.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f107372.css",
-    "static/js/main.1c9338c9.js"
+    "static/css/main.49b1b13f.css",
+    "static/js/main.64180be8.js"
   ]
 }
