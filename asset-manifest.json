@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/capsule-house/static/css/main.7f107372.css",
+    "main.js": "/capsule-house/static/js/main.70d33536.js",
+    "static/media/_750x.webp": "/capsule-house/static/media/841d169425d84d25a561a0d439f05ccf_750x.711174a93d87d4c96bc2.webp",
+    "static/media/IMG_3278.JPG": "/capsule-house/static/media/IMG_3278.0cda3f267bf71025e1d6.JPG",
+    "static/media/IMG_3523.JPG": "/capsule-house/static/media/IMG_3523.a35b8d425ce3c99ee4cb.JPG",
+    "static/media/IMG_3414.JPG": "/capsule-house/static/media/IMG_3414.ddfe53d64825061506e7.JPG",
+    "static/media/IMG_3280.JPG": "/capsule-house/static/media/IMG_3280.1d317924a6d1bb95fe64.JPG",
+    "static/media/IMG_3277.JPG": "/capsule-house/static/media/IMG_3277.bc16210d7a87320cfd7e.JPG",
+    "static/media/IMG_3272.JPG": "/capsule-house/static/media/IMG_3272.350810fd3e5aad33b400.JPG",
+    "static/media/IMG_3539.JPG": "/capsule-house/static/media/IMG_3539.486b8ebfba75e923bbc7.JPG",
+    "static/media/IMG_3279.JPG": "/capsule-house/static/media/IMG_3279.35817a1b1aaaf3c9c346.JPG",
+    "static/media/IMG_3273.jpg": "/capsule-house/static/media/IMG_3273.62d99286b7c29252432c.jpg",
+    "static/media/IMG_3281.JPG": "/capsule-house/static/media/IMG_3281.346dc9ad0b8662b6f710.JPG",
+    "static/media/IMG_3540.JPG": "/capsule-house/static/media/IMG_3540.346dc9ad0b8662b6f710.JPG",
+    "static/media/IMG_3276.JPG": "/capsule-house/static/media/IMG_3276.801e7c630d71364ecc14.JPG",
+    "static/media/CAPSULE-HOUSE-21.jpg": "/capsule-house/static/media/CAPSULE-HOUSE-21.f72d9f44dfa0695a2a90.jpg",
+    "static/media/IMG_3275.JPG": "/capsule-house/static/media/IMG_3275.e38a7a334009bff65b1f.JPG",
+    "static/media/IMG_3541.JPG": "/capsule-house/static/media/IMG_3541.179f85edd04102a18e59.JPG",
+    "static/media/IMG_3542.JPG": "/capsule-house/static/media/IMG_3542.6e74abfdd2e60f503872.JPG",
+    "static/media/IMG_3274.JPG": "/capsule-house/static/media/IMG_3274.86e52b54883107868d88.JPG",
+    "static/media/Без названия (3).jpg": "/capsule-house/static/media/Без названия (3).2707ab9b99a22deb491d.jpg",
+    "index.html": "/capsule-house/index.html",
+    "main.7f107372.css.map": "/capsule-house/static/css/main.7f107372.css.map",
+    "main.70d33536.js.map": "/capsule-house/static/js/main.70d33536.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f107372.css",
+    "static/js/main.70d33536.js"
+  ]
+}
